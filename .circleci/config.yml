@@ -1,8 +1,10 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+  aws-s3: circleci/aws-s3@1.0.15
 jobs:
   build-and-deploy:
+    resource_class: small
     executor:
       name: node/default
     steps:
