@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js" integrity="sha256-66f6uQTQkvHF8jpniLWJjnteEfmQaC/tATFew/nTBA8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.js" integrity="sha256-kzv+r6dLqmz7iYuR2OdwUgl4X5RVsoENBzigdF5cxtU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css" integrity="sha256-A47OwxL/nAN0ydiDFTSGX7ftbfTJTKgiJ0zqCuTPDh4=" crossorigin="anonymous" />
+    <script src="./m3u8gen.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Playlist creator</h1>
+      <div class="row">
+        <p>Paste in a list of filenames, and generate an m3u (enhanced) playlist from them.</p>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <row>
+            <label for="inputText">Input Song URLs</label>
+            <br />
+            <textarea id="inputText" rows="4" cols="50" onkeyup="m3u8gen()"></textarea>
+          </row>
+          <row>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="spaceWithPlus">
+              <label class="form-check-label" for="spaceWithPlus">Replace space with "+"</label>
+            </div>
+            <label for="appendToUrl">Append to URL</label>
+            <input type="text" id="appendToUrl" name="appendToUrl"><br><br>
+              <label for="prependToUrl">Preend to URL</label>
+              <input type="text" id="prependToUrl" name="prependToUrl"><br><br>
+          </row>
+        </div>
+        <div class="col-md">
+          <label for="outputText">M3U8 Contents</label>
+          <br />
+          <textarea id="outputText" rows="4" cols="50"></textarea>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

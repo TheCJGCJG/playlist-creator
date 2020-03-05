@@ -1,0 +1,11 @@
+{
+  "name": "playlist-creator",
+  "version": "1.0.0",
+  "description": "A utility to generate an m3u8 playlist from a list of files",
+  "main": "m3u8gen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charles Gillham",
+  "license": "ISC"
+}
